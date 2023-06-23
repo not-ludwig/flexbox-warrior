@@ -1,0 +1,134 @@
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Lexend Deca', sans-serif; */
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-darkcyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+html, body {
+    min-height: 100% !important;
+    font-size: 15px;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+article > h1 {
+    color: var(--light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+article > p {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+article > h1, 
+article > p {
+    margin-top: 2.5rem;
+}
+
+/* Card Style */
+.card {
+    width: 305px;
+    padding: 45px;
+}
+
+/* Button style*/
+.card > a {
+    display: flex;
+    height: 45px;
+    width: 140px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    border-radius: 25px;
+    
+}
+
+.card > a:hover, .card > a:focus{
+    background-color: transparent;
+    color: white;
+    border: 2.5px solid white;
+    transition: 0.3s;
+}
+
+/* Adding color to each card and button accordingly */
+.sedans {
+    border-radius: 10px 0 0 10px;
+    background-color: var(--bright-orange);
+}
+
+.sedans > a {
+    color: var(--bright-orange);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs > a {
+    color: var(--dark-cyan);
+}
+
+.luxury {
+    border-radius: 0 10px 10px 0;
+    background-color: var(--very-darkcyan);
+}
+
+.luxury > a {
+    color: var(--very-darkcyan);
+}
+
+.attribution {
+    margin-top: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (max-width: 920px){
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .attribution {
+        padding: 15px;
+    }
+}
