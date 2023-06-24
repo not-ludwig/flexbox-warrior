@@ -1,4 +1,4 @@
-#  Flexbox Warrior
+#  Flexbox Warrior 🥷
 
 _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 
