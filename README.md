@@ -6,5 +6,5 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 
 _The reason for this is basically to see how far can you get using Flexbox and how complex can your CSS get, while also learning how to Flexbox properly._
 
-<!-- ![wp](flexbox-w.jpg =1280x720) -->
-<img src="flexbox-w.jpg"  width="1280" height="720">
+![wp](flexbox-w.jpg)
+<!-- <img src="flexbox-w.jpg"  width="1280" height="720"> -->
