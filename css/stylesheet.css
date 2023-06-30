@@ -56,6 +56,7 @@ section {
     margin-left: 50px;
     margin-right: 50px;
     gap: 25px;
+    /* padding: 20px; */
 }
 
 .card_content > h1 {
@@ -148,8 +149,27 @@ section {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 375px){
     body {
         background-image: url(/images/pattern-background-mobile.svg);
+    }
+
+    .card {
+        width: 330px; 
+    }
+    .plan {
+        width: 270px;
+    }
+
+    .buttons{
+        width: 270px;
+    }
+
+    .card_content > p {
+        width: 270px;
+    }
+
+    .plan {
+        gap: 15px;
     }
 }
