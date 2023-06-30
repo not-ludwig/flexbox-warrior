@@ -149,7 +149,7 @@ section {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 485px){
     body {
         background-image: url(/images/pattern-background-mobile.svg);
     }
