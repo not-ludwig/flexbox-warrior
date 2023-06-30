@@ -1,8 +1,14 @@
-#  Flexbox Warrior 🥷
+# Flexbox Warrior 🥷
 
 _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 
 **Check the completed challenges by going to their respective branch!**
+
+## Completed Challenges 🎯
+
+1. [✅QR Code Component](https://qr-code-component-taupe-mu.vercel.app/)
+2. [✅3 Column Card Component](https://3-column-preview-card-component-lemon-xi.vercel.app/)
+3. [✅Order Summary Component](https://order-summary-component-omega-gold.vercel.app/)
 
 ## Why? 📌
 
