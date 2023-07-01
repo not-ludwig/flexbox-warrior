@@ -149,6 +149,19 @@ section {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+.change_plan > a:hover, .change_plan > a:active {
+    text-decoration: none;
+    color: rgba(56, 41, 224, 0.671);
+}
+
+.proceed:hover, .proceed:active {
+    background-color: rgba(56, 41, 224, 0.671);
+}
+
+.cancel:hover, .cancel:active {
+    color: var(--dark-blue);
+}
+
 @media screen and (max-width: 485px){
     body {
         background-image: url(/images/pattern-background-mobile.svg);
