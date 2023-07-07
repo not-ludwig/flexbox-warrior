@@ -1,0 +1,224 @@
+/* font-family: 'Josefin Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --grayish-red: hsl(0, 6%, 24%);
+    --given-font: 'Josefin Sans', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    /* min-height: 100%; */
+    /* background-image: url(/images/bg-pattern-desktop.svg); */
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    /* background-color: red; */
+    font-size: 1rem;
+    font-family: var(--given-font);
+}
+
+.container {
+    /* width: 23em; */
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+}
+
+.mobile-logo {
+    padding: 30px;
+}
+
+.hero-desktop, .desktop-logo, .desktop-footer {
+    display: none;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.content-title {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight: 600;
+    color: var(--grayish-red);
+    padding: 10px;
+}
+
+.golden {
+    display: block;
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+.card-content > h1, .card-content > p {
+    text-align: center;
+}
+
+.card-content > p {
+    margin-top: 15px;
+    line-height: 1.6;
+    font-family: var(--given-font);
+    color: var(--desaturated-red);
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.form-container {
+    margin: 50px 0 0 30px;
+    /* padding: 10px; */
+}
+
+.input-box {
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid var(--desaturated-red);
+    background: transparent;
+    width: 100%;
+}
+
+::placeholder {
+    font-family: var(--given-font);
+    color: var(--desaturated-red);
+}
+
+.form {
+    display: flex;
+}
+
+.form-container > form > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 45px;
+    /* left: -45px; */
+    height: 50px;
+    border-radius: 25px;
+    padding: 15px;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    width: 82px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 15px 30px 1px rgba(249, 98, 98, 0.6);
+}
+.footer {
+    font-family: var(--given-font);
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#error-email {
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+
+#success-email {
+    display: none;
+    color:#4FC0D0;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.alert {
+    color: crimson;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.trouble {
+    border: 2px solid crimson;
+}
+
+#btn:hover, #btn:active {
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 73%, 83%));
+    box-shadow: 1px 15px 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile first approach - Anything upwards is default (mobile) styles*/
+
+/* 80em (1280px) */
+@media screen and (min-width: 80em) {
+    * {
+        margin: 0;
+    }
+
+    body {
+        background: url(/images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: rgba(206, 151, 151, 0.1);
+    }
+
+    .hero-mobile, .mobile-logo, .mobile-footer {
+        display: none;
+    }
+
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content-title {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+    
+    .desktop-logo {
+        display: block;
+        margin-top: 65px;
+    }
+
+    .hero-desktop {
+        order: 2;
+        display: block;
+    }
+
+    .desktop-logo, .form-container {
+        margin-left: 165px;
+    }
+
+    .card-content > h1, .card-content > p {
+        margin-left: 165px;
+        text-align: start;
+    }
+
+    .card-content > h1, .card-content > p, .form-container > button {
+        max-width: 450px;
+    }
+
+    .card-content > p {
+        line-height: 1.6;
+    }
+
+    .form-container > form > button {
+        right: 45px;
+        width: 112px;
+    }
+
+    .desktop-footer {
+        display: flex;
+        padding: 10px;
+        margin-left: 165px;
+    }
+
+}
