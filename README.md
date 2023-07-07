@@ -9,6 +9,7 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 1. [✅QR Code Component](https://qr-code-component-taupe-mu.vercel.app/)
 2. [✅3 Column Card Component](https://3-column-preview-card-component-lemon-xi.vercel.app/)
 3. [✅Order Summary Component](https://order-summary-component-omega-gold.vercel.app/)
+4. [✅Base Apparel Coming Soon](https://base-apparel-coming-soon.onrender.com)
 
 ## Why? 📌
 
