@@ -1,0 +1,215 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-darkblue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --blanco: hsl(0, 0%, 100%);
+
+    /* Main Paragraph */
+    --slightly-transparent-blanco: hsla(0, 0%, 100%, 0.75);
+
+    /* Stats */
+    ----slightly-transparet-blancoish: hsla(0, 0%, 100%, 0.6)
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--very-darkblue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* width: 35%; */
+    width: 325px;
+    background-color: var(--dark-desaturated-blue);
+    gap: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.accent-text {
+    color: var(--soft-violet);
+    display: inline-block;
+}
+
+.attribution, .attribution > a:visited {
+    color: var(--blanco);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.card-info > h1 {
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--blanco);
+}
+
+.card-info > p {
+    font-family: 'Inter', sans-serif;
+    color: var(--slightly-transparent-blanco);
+    margin-top: 25px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.card-info > h1, .card-info > p {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--blanco);
+}
+
+.companies, .templates, .queries {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Stat Headings */
+.companies > h2, .templates > h2, .queries > h2 {
+    font-family: 'Inter', sans-serif;
+    color: var(--blanco);
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Stat Description */
+.companies > div, .templates > div, .queries > div {
+    color: var(----slightly-transparet-blancoish);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.queries > h2 {
+    text-transform: uppercase;
+}
+
+.card-img {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: hsla(273, 63%, 44%, 0.541);
+    height: 238.53px;
+}
+
+
+.mobile-header {
+    width: 100%;
+    height: 100%;
+}
+
+.desktop-header {
+    display: none;
+}
+
+.attribution {
+    font-family: 'Inter', sans-serif;
+    color: var(--blanco);
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+/* Mobile first approach - Anything upwards is default (mobile) styles*/
+
+/* 75em (1200px) */
+@media screen and (min-width: 75em) {
+    main {
+        flex-direction: row;
+        width: 1110px;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .desktop-header {
+        display: block;
+    }
+
+    .card-img {
+        order: 2;
+    }
+
+    .card-info > h1 {
+        font-size: 2.1rem;
+    }
+
+    .card-info > h1, .card-info > p {
+        text-align: start;
+    }
+
+    .card-info {
+        margin-left: 70px;
+        margin-right: 125px;
+        margin-top: 40px;
+    }
+
+    .stats {
+        flex-direction: row;
+
+    }
+
+    .companies > h2, .templates > h2, .queries > h2 {
+        text-align: start;
+    }
+
+    .companies > div, .templates > div, .queries > div {
+        text-align: start;
+    }
+
+    .stats {
+        gap: 65px;
+        margin-top: 80px;
+    }
+    
+    .attribution {
+        font-size: 16px;
+    }
+
+    .card-img::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: hsla(273, 63%, 44%, 0.541);
+    }
+}
