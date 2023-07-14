@@ -47,7 +47,7 @@ main {
     display: inline-block;
 }
 
-.attribution, .attribution > a:visited {
+.attribution > a, .attribution > a:visited {
     color: var(--blanco);
 }
 
