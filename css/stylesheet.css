@@ -1,0 +1,190 @@
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --verydarkblue: hsl(234, 12%, 34%);
+    --grayishblue: hsl(229, 6%, 66%);
+    --verylightgray: hsl(0, 0%, 98%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--verylightgray);
+}
+
+span {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 315px;
+    margin-top: 70px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.info > h1 {
+    color: var(--verydarkblue);
+}
+
+.info > p {
+    color: var(--grayishblue);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    background-color: white;
+    /* gap: 10px; */
+    border-radius: 10px;
+    /* border-top: var(--cyan); */
+    border-width: 5px;
+    /* box-shadow: 0px 0px 61px 8px rgba(0,0,0,0.1); */
+    box-shadow: 0px 14px 61px 8px rgba(0,0,0,0.1);
+    /* max-height: 220px; */
+}
+
+.card-title {
+    margin-top: 30px;  
+}
+
+.card-title, .card-content, .img-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.card-title {
+    color: var(--verydarkblue);
+    
+}
+
+.card-content {
+    max-width: 250px;
+    color: var(--grayishblue);
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.supervisor {
+    border-style: solid;
+    border-top-color: var(--cyan);
+    border-left: white;
+    border-right: white;
+    border-bottom: white;   
+}
+
+.team-builder {
+    border-style: solid;
+    border-top-color: var(--red);
+    border-left: white;
+    border-right: white;
+    border-bottom: white;   
+}
+
+.karma {
+    border-style: solid;
+    border-top-color: var(--orange);
+    border-left: white;
+    border-right: white;
+    border-bottom: white;   
+}
+
+.calculator {
+    border-style: solid;
+    border-top-color: var(--blue);
+    border-left: white;
+    border-right: white;
+    border-bottom: white;   
+}
+
+.card-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Mobile first approach - Anything upwards is default (mobile) styles*/
+
+/* 70.313em (1125px) */
+@media screen and (min-width: 70.313em) {
+    .cards {
+        flex-direction: row;
+    }
+
+    main {
+        max-width: none;
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .supervisor {
+        align-self: center;
+    }
+
+    .calculator {
+        align-self: center;
+    }
+
+    .info > h1 {
+        font-size: 32px;
+    }
+
+    .info > p {
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    footer {
+        margin-bottom: 10px;
+    }
+
+}
