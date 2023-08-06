@@ -1,0 +1,161 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+	box-sizing: border-box;
+}
+
+p,
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--darkcyan: hsl(158, 36%, 37%);
+	--cream: hsl(30, 38%, 92%);
+	--verydarkblue: hsl(212, 21%, 14%);
+	--darkgrayishblue: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 14px;
+	background-color: var(--cream);
+}
+
+.container {
+	max-width: 575px;
+	background-color: var(--white);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.mobile__bg,
+.desktop__bg {
+	width: 100%;
+	height: 100%;
+}
+
+.card__info {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin-top: 45px;
+	max-width: 500px;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+
+.product {
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+.product__name {
+	font-family: "Fraunces", sans-serif;
+}
+
+.product,
+.product__description {
+	font-family: "Montserrat", sans-serif;
+	color: var(--darkgrayishblue);
+}
+
+.product__description {
+	line-height: 1.5;
+}
+
+.prices {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.prices__deal {
+	color: var(--darkcyan);
+	font-family: "Fraunces", sans-serif;
+	font-size: 36px;
+}
+
+.prices__actual {
+	font-size: 18px;
+	text-decoration: line-through;
+	font-family: "Montserrat", sans-serif;
+	color: var(--darkgrayishblue);
+}
+
+.btn {
+	background: var(--darkcyan);
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	padding: 25px;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 40px;
+	border-radius: 15px;
+}
+
+.btn {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.btn:visited {
+	color: var(--white);
+}
+
+.btn:hover {
+	background-color: var(--verydarkblue);
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 15px;
+	font-family: "Montserrat", sans-serif;
+}
+
+span {
+	display: block;
+}
+
+.desktop__bg {
+	display: none;
+}
+
+/* Mobile first approach - Anything upwards is default (mobile) styles*/
+
+/* 70em (1120px) */
+@media screen and (min-width: 70em) {
+	.mobile__bg {
+		display: none;
+	}
+
+	.desktop__bg {
+		display: block;
+		object-fit: cover;
+	}
+
+	.container {
+		display: flex;
+	}
+
+	.card__info {
+		margin: 0;
+		padding: 35px;
+		width: 500px;
+	}
+
+	.btn {
+		margin-bottom: 0;
+	}
+
+	.product__description {
+		font-size: 13px;
+	}
+}
