@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="mobile-container mt-8 flex justify-between items-center big-container xl:mt-[90px]">
+    <!-- Left Side -->
+    <div>
+      <a href="index.html"><img src="./assets/images/logo.svg" alt="Website Logo"></a>
+    </div>
+
+    <!-- Right Side -->
+    <!-- SIDEBAR -->
+    <div class="xl:invisible">
+      <div class="bg-white h-full fixed z-[1] top-0 right-0 w-[65%] font-inter py-6 px-6 invisible" id="sideMenu">
+        <div class="flex justify-end">
+          <button onclick="closeSideMenu()">
+            <img src="./assets/images/icon-menu-close.svg" alt="Close Menu Button">
+          </button>
+        </div>
+        
+        <ul class="flex flex-col gap-6 py-20 px-2">
+          <a href="#"><li class="hover:text-soft-orange">Home</li></a>
+          <a href="#"><li class="hover:text-soft-orange">New</li></a>
+          <a href="#"><li class="hover:text-soft-orange">Popular</li></a>
+          <a href="#"><li class="hover:text-soft-orange">Trending</li></a>
+          <a href="#"><li class="hover:text-soft-orange">Categories</li></a>
+        </ul>
+      
+      </div>
+      <button onclick="openSideMenu()">
+        <img src="./assets/images/icon-menu.svg" alt="Hamburger Menu Button">
+      </button>
+    </div>
+    <!-- SIDEBAR END -->
+    <div class="hidden xl:block font-inter text-dark-grayish-blue">
+      <ul class="flex gap-8">
+        <a href="#"><li class="hover:text-soft-orange">Home</li></a>
+        <a href="#"><li class="hover:text-soft-orange">New</li></a>
+        <a href="#"><li class="hover:text-soft-orange">Popular</li></a>
+        <a href="#"><li class="hover:text-soft-orange">Trending</li></a>
+        <a href="#"><li class="hover:text-soft-orange">Categories</li></a>
+      </ul>
+    </div>
+  </nav>
+  <!-- Nav END -->
+  
+  <!-- Hero -->
+  <section class="mobile-container mt-9 big-container flex flex-col xl:flex-row xl:gap-[30px]">
+    <div class="flex flex-col xl:w-[70%]">
+      <div>
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="Hero Section Image Mobile" class="xl:hidden">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="Hero Section Image Desktop" class="hidden xl:block">
+      </div>
+
+      <div class="mt-7 font-inter flex flex-col xl:flex-row xl:gap-[90px] xl:items-center">
+        <div>
+          <span class="block text-4xl font-inter font-extrabold xl:text-[55px] xl:leading-[3.5rem]">The Bright Future of Web 3.0?</span>
+        </div>
+
+        <div class="mt-7 xl:mt-0">
+          <p class="font-normal text-dark-grayish-blue leading-7 xl:w-[330px]">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+
+          <button class="mt-7 py-3 px-6 bg-soft-red font-bold uppercase tracking-[4px] xl:mt-10 hover:bg-very-dark-gblue hover:text-off-white">Read more</button>
+          
+        </div>
+      </div>
+    </div>
+      <!-- News -->
+  <section class="mt-14 bg-very-dark-gblue py-6 px-4 font-inter xl:mt-0 xl:w-[30%]">
+    <span class="block text-soft-orange text-3xl font-bold xl:text-4xl">New</span> 
+
+    <div class="mt-7">
+      <div>
+        <div class="flex flex-col gap-2">
+          <a href="#"><span class="block text-off-white text-lg font-bold hover:text-soft-orange">Hydrogen VS Electric Cars</span></a>
+          <p class="text-grayish-blue text-base xl:w-[300px]">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr class="mt-7 xl:mt-12">
+      </div>
+      
+      <div class="mt-7 xl:mt-12">
+        <div class="flex flex-col gap-2">
+          <a href="#"><span class="block text-off-white text-lg font-bold hover:text-soft-orange cursor-pointer">The Downsides of AI Artistry</span></a>
+          <p class="text-grayish-blue text-base xl:w-[300px]">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr class="mt-7 xl:mt-12">
+      </div>
+      
+      <div class="mt-7 xl:mt-12">
+        <div class="flex flex-col gap-2">
+          <a href="#"><span class="block text-off-white text-lg font-bold hover:text-soft-orange">Is VC Funding Drying Up?</span></a>
+          <p class="text-grayish-blue text-base xl:w-[300px]">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News END -->
+  </section>
+  
+  <!-- Hero END -->
+  
+
+  <!-- Articles -->
+  <section class="mobile-container mt-12 font-inter big-container xl:mt-[55px]">
+
+    <div class="flex flex-col xl:flex-row xl:justify-between">
+      <div class="flex gap-5">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" class="h-[130px] w-auto">
+        <div class="flex flex-col gap-2">
+          <span class="block text-4xl text-soft-red font-bold">01</span>
+          <a href="#"><span class="block text-base font-bold text-very-dark-gblue xl:text-xl hover:text-soft-red">Reviving Retro PCs</span></a>
+          <p class="text-dark-grayish-blue xl:w-[230px]">What happens when old PCs are given modern upgrades?</p>
+       </div>
+      </div>
+      
+      <div class="flex gap-5 mt-7 xl:mt-0">
+        <img src="./assets/images/image-top-laptops.jpg" alt="Retro PC" class="h-[130px] w-auto">
+        <div class="flex flex-col gap-2">
+          <span class="block text-4xl text-soft-red font-bold">02</span>
+          <a href="#"><span class="block text-base font-bold text-very-dark-gblue xl:text-xl hover:text-soft-red">Top 10 Laptops of 2022</span></a>
+          <p class="text-dark-grayish-blue xl:w-[220px]">Our best picks for various needs and budgets.</p>
+       </div>
+      </div>
+
+      <div class="flex gap-5 mt-7 xl:mt-0">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="Retro PC" class="h-[130px] w-auto">
+        <div class="flex flex-col gap-2">
+          <span class="block text-4xl text-soft-red font-bold">03</span>
+          <a href="#"><span class="block text-base font-bold text-very-dark-gblue xl:text-xl hover:text-soft-red">The Growth of Gaming</span></a>
+          <p class="text-dark-grayish-blue xl:w-[230px]">How the pandemic has sparked fresh opportunities.</p>
+       </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Articles END -->
+  <div class="attribution mt-[80px] xl:mt-[130px] flex flex-col lg:flex-row lg:justify-center font-inter">
+    <div>
+      <span class="block text-[16px]">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+      <span class="block text-[16px]">Coded by <a href="https://github.com/not-ludwig">Ludwig Cabrera❤️</a>.</span>
+    </div>
+  </div>
+
+  <script>
+    function openSideMenu() {
+      let sideMenu = document.getElementById("sideMenu")
+      sideMenu.style.visibility = "visible"
+      // sideMenu.style.transition = "0.5s"
+      document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)"
+    }
+
+    function closeSideMenu() {
+      let sideMenu = document.getElementById("sideMenu")
+      sideMenu.style.visibility = "hidden"
+      document.body.style.backgroundColor = "white"
+    }
+  </script>
+
+</body>
+</html>
