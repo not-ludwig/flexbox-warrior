@@ -13,6 +13,7 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 5. [✅ Stats Preview Card](https://stats-preview-card-miaf.onrender.com)
 6. [✅ Four Card Feature](https://four-card-feature.onrender.com)
 7. [✅ Product Preview Card](https://product-preview-card-tymj.onrender.com)
+8. [✅ News Homepage](https://news-homepage112.onrender.com/)
 
 ## Why? 📌
 
