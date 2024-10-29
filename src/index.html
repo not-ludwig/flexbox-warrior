@@ -15,6 +15,7 @@
   </style>
 </head>
 <body>
+  <header>
   <!-- Nav -->
   <nav class="mobile-container mt-8 flex justify-between items-center big-container xl:mt-[90px]">
     <!-- Left Side -->
@@ -33,11 +34,11 @@
         </div>
         
         <ul class="flex flex-col gap-6 py-20 px-2">
-          <a href="#"><li class="hover:text-soft-orange">Home</li></a>
-          <a href="#"><li class="hover:text-soft-orange">New</li></a>
-          <a href="#"><li class="hover:text-soft-orange">Popular</li></a>
-          <a href="#"><li class="hover:text-soft-orange">Trending</li></a>
-          <a href="#"><li class="hover:text-soft-orange">Categories</li></a>
+          <li class="hover:text-soft-orange"><a href="#">Home</a></li>
+          <li class="hover:text-soft-orange"><a href="#">New</a></li>
+          <li class="hover:text-soft-orange"><a href="#">Popular</a></li>
+          <li class="hover:text-soft-orange"><a href="#">Trending</a></li>
+          <li class="hover:text-soft-orange"><a href="#">Categories</a></li>
         </ul>
       
       </div>
@@ -48,16 +49,17 @@
     <!-- SIDEBAR END -->
     <div class="hidden xl:block font-inter text-dark-grayish-blue">
       <ul class="flex gap-8">
-        <a href="#"><li class="hover:text-soft-orange">Home</li></a>
-        <a href="#"><li class="hover:text-soft-orange">New</li></a>
-        <a href="#"><li class="hover:text-soft-orange">Popular</li></a>
-        <a href="#"><li class="hover:text-soft-orange">Trending</li></a>
-        <a href="#"><li class="hover:text-soft-orange">Categories</li></a>
+        <li class="hover:text-soft-orange"><a href="#">Home</a></li>
+        <li class="hover:text-soft-orange"><a href="#">New</a></li>
+        <li class="hover:text-soft-orange"><a href="#">Popular</a></li>
+        <li class="hover:text-soft-orange"><a href="#">Trending</a></li>
+        <li class="hover:text-soft-orange"><a href="#">Categories</a></li>
       </ul>
     </div>
   </nav>
   <!-- Nav END -->
-  
+</header>
+<main>
   <!-- Hero -->
   <section class="mobile-container mt-9 big-container flex flex-col xl:flex-row xl:gap-[30px]">
     <div class="flex flex-col xl:w-[70%]">
@@ -152,12 +154,15 @@
 
   </section>
   <!-- Articles END -->
-  <div class="attribution mt-[80px] xl:mt-[130px] flex flex-col lg:flex-row lg:justify-center font-inter">
-    <div>
-      <span class="block text-[16px]">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
-      <span class="block text-[16px]">Coded by <a href="https://github.com/not-ludwig">Ludwig Cabrera❤️</a>.</span>
+</main>
+  <footer>
+    <div class="attribution mt-[80px] xl:mt-[130px] flex flex-col lg:flex-row lg:justify-center font-inter">
+      <div>
+        <span class="block text-[16px]">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+        <span class="block text-[16px]">Coded by <a href="https://github.com/not-ludwig">Ludwig Cabrera❤️</a>.</span>
+      </div>
     </div>
-  </div>
+  </footer>
 
   <script>
     function openSideMenu() {
