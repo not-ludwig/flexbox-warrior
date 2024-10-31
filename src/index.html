@@ -14,11 +14,11 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
 </head>
-<body class="font-poppins bg-off-white">
+<body class="font-poppins bg-off-white flex flex-col items-center xl:justify-center xl:h-[100vh]">
   
-  <main class="flex flex-col items-center ">
+  <main class="">
     <!-- Card -->
-    <div class="bg-cwhite pt-8 px-6 pb-10 mt-[65px] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-[6rem] xl:px-12">
+    <div class="bg-cwhite pt-8 px-6 pb-10 mt-[65px] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-[6rem] xl:px-20 xl:mt-0  xl:rounded-br-[9rem]">
       <form action="" class="flex gap-[20px]">
         <div class="flex flex-col gap-1">
           <label for="day" class="text-sm text-smokey-grey uppercase tracking-[2px] font-bold" id="day_title">Day</label>
@@ -38,42 +38,43 @@
           <span class="hidden text-light-red text-sm italic" id="year_error"></span>
         </div>
       </form>
-      <!-- Arrow -->
-    <div class="w-full mt-[45px]">
-        <div class="h-[2px] bg-light-grey w-[300px] xl:w-[420px]">
-          <button type="submit" onclick="getAge()" class="bg-purple w-[50px] h-[50px] rounded-full relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center hover:bg-off-black xl:w-[70px] xl:h-[70px] xl:translate-x-[218%]">
-            <img src="assets/images/icon-arrow.svg" alt="" class="w-[30px] h-auto xl:w-[35px]">
-          </button>
-        </div>
-    </div>
-    <!-- Arrow END -->
+        <!-- Arrow -->
+      <div class="w-full mt-[45px]">
+          <div class="h-[2px] bg-light-grey w-[300px] xl:w-[420px]">
+            <button type="submit" onclick="getAge()" class="bg-purple w-[50px] h-[50px] rounded-full relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center hover:bg-off-black xl:w-[70px] xl:h-[70px] xl:translate-x-[218%]">
+              <img src="assets/images/icon-arrow.svg" alt="" class="w-[30px] h-auto xl:w-[35px]">
+            </button>
+          </div>
+      </div>
+      <!-- Arrow END -->
 
-    <!-- Result -->
-    <div class="mt-[50px] italic text-6xl font-extrabold xl:text-7xl">
-      <div class="flex gap-[12px]">
-        <span id="years_label" class="block text-purple">--</span>
-        <span class="block text-off-black">years</span>
+      <!-- Result -->
+      <div class="mt-[50px] italic text-6xl font-extrabold xl:text-7xl">
+        <div class="flex gap-[12px]">
+          <span id="years_label" class="block text-purple">--</span>
+          <span class="block text-off-black">years</span>
+        </div>
+        <div class="flex gap-[12px] italic">
+          <span id="months_label" class="block text-purple">--</span>
+          <span class="block text-off-black">months</span>
+        </div>
+        <div class="flex gap-[12px] italic">
+          <span id="days_label" class="block text-purple">--</span>
+          <span class="block text-off-black">days</span>
+        </div>
       </div>
-      <div class="flex gap-[12px] italic">
-        <span id="months_label" class="block text-purple">--</span>
-        <span class="block text-off-black">months</span>
-      </div>
-      <div class="flex gap-[12px] italic">
-        <span id="days_label" class="block text-purple">--</span>
-        <span class="block text-off-black">days</span>
-      </div>
-    </div>
-    <!-- Result END -->
+      <!-- Result END -->
 
     </div>
     <!-- Card END -->
   </main>
 
-  <div class="attribution mt-10 text-base flex flex-col text-center">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="block text-blue-500">Frontend Mentor</span></a> 
-    Coded by <a href="https://github.com/not-ludwig"><span class="block text-blue-500">Ludwig Cabrera❤️</span></a>
-  </div>
-
+  <footer>
+    <div class="attribution mt-10 text-base flex flex-col text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="block text-blue-500">Frontend Mentor</span></a> 
+      Coded by <a href="https://github.com/not-ludwig"><span class="block text-blue-500">Ludwig Cabrera❤️</span></a>
+    </div>
+  </footer>
   <script>
     function changeColors(){
         let day_title = document.getElementById("day_title");
