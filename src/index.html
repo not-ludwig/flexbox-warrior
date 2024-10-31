@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/output.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body class="font-poppins bg-off-white">
+  
+  <main class="flex flex-col items-center ">
+    <!-- Card -->
+    <div class="bg-cwhite pt-8 px-6 pb-10 mt-[65px] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-[6rem] xl:px-12">
+      <form action="" class="flex gap-[20px]">
+        <div class="flex flex-col gap-1">
+          <label for="day" class="text-sm text-smokey-grey uppercase tracking-[2px] font-bold" id="day_title">Day</label>
+          <input type="text" id="day" min="1" max="31" placeholder="DD" class="w-[90px] h-[55px] border border-light-grey rounded-lg pl-4  font-bold text-off-black focus:border-purple outline-none xl:font-extrabold">
+          <span class="hidden text-light-red text-sm italic" id="day_error"></span>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="month" class="text-sm text-smokey-grey uppercase tracking-[2px] font-bold" id="month_title">Month</label>
+          <input type="text" id="month" min="1" max="12" placeholder="MM" class="w-[90px] h-[55px] border border-light-grey rounded-lg pl-4  font-bold text-off-black focus:border-purple outline-none xl:font-extrabold">
+          <span class="hidden text-light-red text-sm italic" id="month_error"></span>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label for="year" class="text-sm text-smokey-grey uppercase tracking-[2px] font-bold" id="year_title">Year</label>
+          <input type="text" id="year" placeholder="YYYY" class="w-[90px] h-[55px] border border-light-grey rounded-lg pl-4 font-bold text-off-black focus:border-purple outline-none xl:font-extrabold">
+          <span class="hidden text-light-red text-sm italic" id="year_error"></span>
+        </div>
+      </form>
+      <!-- Arrow -->
+    <div class="w-full mt-[45px]">
+        <div class="h-[2px] bg-light-grey w-[300px] xl:w-[420px]">
+          <button type="submit" onclick="getAge()" class="bg-purple w-[50px] h-[50px] rounded-full relative top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center hover:bg-off-black xl:w-[70px] xl:h-[70px] xl:translate-x-[218%]">
+            <img src="assets/images/icon-arrow.svg" alt="" class="w-[30px] h-auto xl:w-[35px]">
+          </button>
+        </div>
+    </div>
+    <!-- Arrow END -->
+
+    <!-- Result -->
+    <div class="mt-[50px] italic text-6xl font-extrabold xl:text-7xl">
+      <div class="flex gap-[12px]">
+        <span id="years_label" class="block text-purple">--</span>
+        <span class="block text-off-black">years</span>
+      </div>
+      <div class="flex gap-[12px] italic">
+        <span id="months_label" class="block text-purple">--</span>
+        <span class="block text-off-black">months</span>
+      </div>
+      <div class="flex gap-[12px] italic">
+        <span id="days_label" class="block text-purple">--</span>
+        <span class="block text-off-black">days</span>
+      </div>
+    </div>
+    <!-- Result END -->
+
+    </div>
+    <!-- Card END -->
+  </main>
+
+  <div class="attribution mt-10 text-base flex flex-col text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><span class="block text-blue-500">Frontend Mentor</span></a> 
+    Coded by <a href="https://github.com/not-ludwig"><span class="block text-blue-500">Ludwig Cabrera❤️</span></a>
+  </div>
+
+  <script>
+    function changeColors(){
+        let day_title = document.getElementById("day_title");
+        let year_title = document.getElementById("year_title");
+        let month_title = document.getElementById("month_title");
+        day_title.classList.remove("text-smokey-grey")
+        day_title.classList.add("text-light-red");
+        year_title.classList.remove("text-smokey-grey")
+        year_title.classList.add("text-light-red");
+        month_title.classList.remove("text-smokey-grey")
+        month_title.classList.add("text-light-red");
+
+        let day_input = document.getElementById('day');
+        let year_input = document.getElementById('year');
+        let month_input = document.getElementById('month');
+        day_input.classList.remove("border-light-grey")
+        day_input.classList.add("border-light-red");
+        year_input.classList.remove("border-light-grey")
+        year_input.classList.add("border-light-red");
+        month_input.classList.remove("border-light-grey")
+        month_input.classList.add("border-light-red");
+
+    }
+    function revertColors(){
+        let day_title = document.getElementById("day_title");
+        let year_title = document.getElementById("year_title");
+        let month_title = document.getElementById("month_title");
+        day_title.classList.remove("text-light-red")
+        day_title.classList.add("text-smokey-grey");
+        year_title.classList.remove("text-light-red")
+        year_title.classList.add("text-smokey-grey");
+        month_title.classList.remove("text-light-red")
+        month_title.classList.add("text-smokey-grey");
+
+        let day_input = document.getElementById('day');
+        let year_input = document.getElementById('year');
+        let month_input = document.getElementById('month');
+        day_input.classList.remove("border-light-red")
+        day_input.classList.add("border-light-grey");
+        year_input.classList.remove("border-light-red")
+        year_input.classList.add("border-light-grey");
+        month_input.classList.remove("border-light-red")
+        month_input.classList.add("border-light-grey");
+    }
+
+    function getAge(){
+      const day = document.getElementById('day').value;
+      const month = document.getElementById('month').value;
+      const year = document.getElementById('year').value;
+
+      if (!day || !month || !year){
+        changeColors();
+
+        let year_error = document.getElementById("year_error");
+        year_error.style.display = "block"
+        year_error.innerHTML = "This field is required";
+          
+        let month_error = document.getElementById("month_error");
+        month_error.style.display = "block"
+        month_error.innerHTML = "This field is required";
+
+        let day_error = document.getElementById("day_error");
+        day_error.style.display = "block"
+        day_error.innerHTML = "This field is required";
+        return;
+      } else{
+        revertColors();
+      }
+
+      const dayInt = parseInt(day);
+      const monthInt = parseInt(month);
+      const yearInt = parseInt(year);
+
+      if (isNaN(dayInt) || isNaN(monthInt) || isNaN(yearInt)) {
+        changeColors();
+
+        console.log("Please enter a valid date");
+        let year_error = document.getElementById("year_error");
+        year_error.style.display = "block"
+        year_error.innerHTML = "Must be in the past";
+          
+        let month_error = document.getElementById("month_error");
+        month_error.style.display = "block"
+        month_error.innerHTML = "Must be a valid month";
+
+        let day_error = document.getElementById("day_error");
+        day_error.style.display = "block"
+        day_error.innerHTML = "Must be a valid day";
+        return;
+      } else{
+        revertColors();
+        year_error.style.display = "none"
+        month_error.style.display = "none"
+        day_error.style.display = "none"
+      }
+
+      const birthDate = new Date(year, month, day);
+      const today = new Date();
+
+      if (dayInt < 1 || dayInt > 31) {
+        document.getElementById("day_error").style.display = "block"
+        document.getElementById("day_error").innerHTML = "Must be a valid day";
+        return;
+      }else{
+        document.getElementById("day_error").style.display = "none"
+      }
+
+      if (month < 1 || month > 12) {
+        document.getElementById("month_error").style.display = "block"
+        document.getElementById("month_error").innerHTML = "Must be a valid month";
+        return;
+      } else{
+        document.getElementById("month_error").style.display = "none"
+      }
+
+      if (year > today.getFullYear()){
+        document.getElementById("year_error").style.display = "block"
+        document.getElementById("year_error").innerHTML = "Must be in the past";
+        return;
+      } else{
+        document.getElementById("year_error").style.display = "none"
+      }
+
+      let years = today.getFullYear() - birthDate.getFullYear();
+
+      let months = today.getMonth() - birthDate.getMonth();
+
+      if(months < 0){
+        years--;
+        months = months + 12;
+      }
+
+      let days = today.getDate() - birthDate.getDate();
+
+      if(days < 0){
+        months--;
+
+        let prevmonth = new Date(today.getFullYear(), today.getMonth(), 0);
+        days += prevmonth.getDate();
+      }
+
+      document.getElementById("years_label").innerHTML = years;
+      document.getElementById("months_label").innerHTML = months;
+      document.getElementById("days_label").innerHTML = days;
+    }
+  </script>
+</body>
+</html>
