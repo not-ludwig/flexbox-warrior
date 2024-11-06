@@ -1170,6 +1170,14 @@ video {
     display: none;
   }
 
+  .xl\:h-\[796px\]{
+    height: 796px;
+  }
+
+  .xl\:min-h-\[796px\]{
+    min-height: 796px;
+  }
+
   .xl\:w-\[335px\]{
     width: 335px;
   }
