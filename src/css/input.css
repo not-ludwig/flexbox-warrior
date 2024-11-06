@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-container {
+    @apply mx-[25px]
+}
+
+.tablet-container {
+    @apply sm:mx-[30px]
+}
+
+.large-container {
+    @apply xl:mx-[45px]
+}
+
+@layer utilities {
+    .triangleClip {
+        width: 30px;
+        height: 30px;
+        aspect-ratio: 1;
+        clip-path: polygon(0 100%,100% 0,100% 100%);
+    }
+}
