@@ -31,6 +31,10 @@ module.exports = {
         'graphic-design-other': "url('../images/desktop/image-graphic-design.jpg')",
         'photography-mobile': "url('../images/mobile/image-photography.jpg')",
         'photography-mobile-other': "url('../images/desktop/image-photography.jpg')",
+      },
+
+      screens: {
+        'device-height': {'raw': '(max-height: 680px)'},
       }
     },
   },
