@@ -14,11 +14,12 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 5. [✅ Stats Preview Card](https://stats-preview-card-miaf.onrender.com)
 6. [✅ Four Card Feature](https://four-card-feature.onrender.com)
 7. [✅ Product Preview Card](https://product-preview-card-tymj.onrender.com)
+8. [✅ Social Links Profile](https://sociallinksprofile9981.onrender.com/)
      
 # Junior
-8. [✅ News Homepage](https://news-homepage112.onrender.com/)
-9. [✅ Age Calculator App](https://age-calculator-app12312.onrender.com/)
-10. [✅ Sunnyside Agency Landing Page](https://sunnyside-agency-landing-page1241111.onrender.com/)
+9. [✅ News Homepage](https://news-homepage112.onrender.com/)
+10. [✅ Age Calculator App](https://age-calculator-app12312.onrender.com/)
+11. [✅ Sunnyside Agency Landing Page](https://sunnyside-agency-landing-page1241111.onrender.com/)
 
 ## Why? 📌
 
