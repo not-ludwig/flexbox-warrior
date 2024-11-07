@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.list-button {
+    @apply px-10 py-[0.55rem] bg-cGrey700 w-full text-center font-semibold rounded-lg hover:bg-cGreen hover:text-cGrey900;
+}
