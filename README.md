@@ -3,7 +3,7 @@
 _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 
 **Check the completed challenges by going to their respective branch!**
-
+https://tipcalculator01977575.onrender.com/
 ## Completed Challenges 🎯
 
 # Newbie
@@ -20,6 +20,7 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 9. [✅ News Homepage](https://news-homepage112.onrender.com/)
 10. [✅ Age Calculator App](https://age-calculator-app12312.onrender.com/)
 11. [✅ Sunnyside Agency Landing Page](https://sunnyside-agency-landing-page1241111.onrender.com/)
+12. [✅ Tip Calculator App](https://tipcalculator01977575.onrender.com/)
 
 ## Why? 📌
 
