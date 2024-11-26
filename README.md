@@ -3,7 +3,7 @@
 _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 
 **Check the completed challenges by going to their respective branch!**
-https://tipcalculator01977575.onrender.com/
+
 ## Completed Challenges 🎯
 
 # Newbie
