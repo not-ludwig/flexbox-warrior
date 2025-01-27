@@ -6,7 +6,6 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 
 ## Completed Challenges 🎯
 
-# Newbie
 1. [✅ QR Code Component](https://qr-code-component-taupe-mu.vercel.app/)
 2. [✅ 3 Column Card Component](https://3-column-preview-card-component-lemon-xi.vercel.app/)
 3. [✅ Order Summary Component](https://order-summary-component-omega-gold.vercel.app/)
@@ -15,12 +14,11 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 6. [✅ Four Card Feature](https://four-card-feature.onrender.com)
 7. [✅ Product Preview Card](https://product-preview-card-tymj.onrender.com)
 8. [✅ Social Links Profile](https://sociallinksprofile9981.onrender.com/)
-     
-# Junior
 9. [✅ News Homepage](https://news-homepage112.onrender.com/)
 10. [✅ Age Calculator App](https://age-calculator-app12312.onrender.com/)
 11. [✅ Sunnyside Agency Landing Page](https://sunnyside-agency-landing-page1241111.onrender.com/)
 12. [✅ Tip Calculator App](https://tipcalculator01977575.onrender.com/)
+13. [✅ Recipe Page](https://recipe-page-123789127.onrender.com/)
 
 ## Why? 📌
 
