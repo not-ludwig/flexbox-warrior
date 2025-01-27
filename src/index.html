@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/output.css">
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+<body class="lg:bg-full-size-bg flex flex-col lg:items-center bg-white">
+  <div class="bg-white flex flex-col lg:max-w-[740px] lg:rounded-xl lg:mt-[90px]">
+  <!-- Top Image -->
+    <header class="lg:pl-[30px] lg:pr-[35px] lg:pt-[30px]">
+      <img src="assets/images/image-omelette.jpeg" alt="Recipe Image" class="lg:rounded-xl">
+    </header>
+
+    <main class="pl-[30px] pr-[35px] mt-[40px] lg:flex lg:flex-col lg:pb-[30px]">
+      <!-- Recipe Description -->
+      <section class="flex flex-col gap-[35px]">
+        <!-- Recipe Title -->
+        <span class="block text-[34px] leading-9 font-young_serif text-Stone-900">Simple Omelette Recipe</span>
+        <!-- Recipe Description P -->
+        <p class="font-outfit min-w-[315px] text-Stone-600">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        
+        <!-- Preparation -->
+        <div class="flex flex-col p-[25px] gap-[20px] bg-rose-50 rounded-lg font-outfit">
+          <span class="block text-xl font-semibold text-Rose-800">Preparation time</span>
+
+          <div class="flex flex-col gap-[20px] pl-4 text-Stone-600">
+            <div class="flex items-center">
+              <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Rose-800"></div>
+              <span class="block pl-8"><span class="font-bold">Total</span>: Approximately 10 minutes</span>
+            </div>
+
+            <div class="flex items-center">
+              <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Rose-800"></div>
+              <span class="block pl-8"><span class="font-bold">Preparation</span>: 5 minutes</span>
+            </div>
+
+            <div class="flex items-center">
+              <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Rose-800"></div>
+              <span class="block pl-8"><span class="font-bold">Cooking</span>: 5 minutes</span>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+      <!-- Ingredients -->
+      <section class="mt-[35px] flex flex-col gap-[30px]">
+        <span class="block text-[34px] leading-9 font-young_serif text-Brown-800">Ingredients</span>
+
+        <div class="flex flex-col gap-[20px] font-outfit pl-4 text-stone-600">
+          <div class="flex items-center">
+            <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Brown-800"></div>
+            <span class="pl-[25px]">2-3 large eggs</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Brown-800"></div>
+            <span class="pl-[25px]">Salt, to taste</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Brown-800"></div>
+            <span class="pl-[25px]">Pepper, to taste</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Brown-800"></div>
+            <span class="pl-[25px]">1 tablespoon of butter or oil</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-[5px] h-[5px] aspect-square rounded-full bg-Brown-800"></div>
+            <span class="pl-[25px]">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span>
+          </div>
+        </div>
+
+        <div class="w-full h-[1.8px] bg-gray-200"></div>
+      </section>
+
+      <!-- Instructions -->
+      <section class="flex flex-col gap-[35px] mt-[35px]">
+        <span class="block text-[34px] leading-9 font-young_serif text-Brown-800">Instructions</span>
+
+        <ol class="flex flex-col list-decimal pl-6 gap-[20px] font-outfit marker:text-Brown-800 marker:font-bold lg:max-w-[640px]">
+          <li class="pl-4 text-Stone-600"><span class="font-bold">Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+      
+          <li class="pl-4 text-Stone-600"><span class="font-bold">Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+      
+          <li class="pl-4 text-Stone-600"><span class="font-bold">Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+          the eggs evenly coat the surface.</li>
+      
+          <li class="pl-4 text-Stone-600"><span class="font-bold">Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the 
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+      
+          <li class="pl-4 text-Stone-600"><span class="font-bold">Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      
+          <li class="pl-4 text-Stone-600"><span class="font-bold">Enjoy</span>: Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </section>
+
+      <!-- Nutrition -->
+      <section class="mt-[35px] flex flex-col gap-[30px]">
+        <span class="block text-[34px] leading-9 font-young_serif text-Brown-800">Nutrition</span>
+
+        <p class="font-outfit text-Stone-600">The table below shows nutritional values per serving without the additional fillings.</p>
+        
+        <div class="font-outfit">
+          <div class="pl-[35px] flex py-3">
+            <span class="block flex-1 text-Stone-600">Calories</span>
+            <span class="block flex-1 text-Brown-800 font-bold">277kcal</span>
+          </div>
+          <div class="w-full h-[1.8px] bg-gray-200"></div>
+          <div class="pl-[35px] flex py-3">
+            <span class="block flex-1 text-Stone-600">Carbs</span>
+            <span class="block flex-1 text-Brown-800 font-bold">0g</span>
+          </div>
+          <div class="w-full h-[1.8px] bg-gray-200"></div>
+          <div class="pl-[35px] flex py-3">
+            <span class="block flex-1 text-Stone-600">Protein</span>
+            <span class="block flex-1 text-Brown-800 font-bold">20g</span>
+          </div>
+          <div class="w-full h-[1.8px] bg-gray-200"></div>
+          <div class="pl-[35px] flex py-3">
+            <span class="block flex-1 text-Stone-600">Fat</span>
+            <span class="block flex-1 text-Brown-800 font-bold">22g</span>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
+  </div>
+  <footer class="px-[45px] mt-[45px]">
+    <div class="attribution flex flex-col items-center font-outfit">
+      <span class="block">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-400">Frontend Mentor</a></span>
+      <span class="block">Coded by <a href="https://github.com/not-ludwig" class="text-blue-400">Ludwig Cabrera ❤️</a></span>
+    </div>
+  </footer>
+</body>
+</html>
