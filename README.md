@@ -22,7 +22,7 @@ _Frontend Challenges using ONLY Flexbox and Vanilla CSS ⚔️_
 
 ## Why? 📌
 
-_The reason for this is basically to see how far can you get using Flexbox and how complex can your CSS get, while also learning how to use Flexbox properly._
+_The reason for this is basically to see how far can you get using Flexbox and how complex can your CSS get, while also learning how to use Flexbox properly (kinda)._
 
 ![wp](flexbox-w.jpg)
 <!-- <img src="flexbox-w.jpg"  width="1280" height="720"> -->
